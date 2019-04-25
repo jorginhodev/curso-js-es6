@@ -1,0 +1,24 @@
+{
+  "name": "curso-js-es6",
+  "version": "1.0.0",
+  "description": "Arquivos do curso",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorginhodev/curso-js-es6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorginhodev/curso-js-es6/issues"
+  },
+  "homepage": "https://github.com/jorginhodev/curso-js-es6#readme",
+  "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3"
+  }
+}
