@@ -1,45 +1,24 @@
 /*
-  EXEMPLO SIMPLES DE USO DE CLASSES
-*/
-class List {
-  constructor() {
-    this.data = [];
-  }
+ERROR - não podemos reatribuir valor a uma const
 
-  add(data) {
-    this.data.push(data);
-    console.log(this.data);
-  }
-}
-
-class TodoList extends List {
-  constructor() {
-    super();
-
-    this.usuario = 'Jorge';
-  }
-
-  mostraUsuario() {
-    console.log(this.usuario);
-  }
-}
-
-const MinhaLista = new TodoList();
-
-document.getElementById('novoTodo').onclick = function() {
-  MinhaLista.add('Novo Todo');
-}
-
-MinhaLista.mostraUsuario();
-
-/*
-  EXEMPLO MÉTODO ESTÁTICO
+const a = 3;
+a = 5;
 */
 
-class Matematica {
-  static soma(a, b) {
-    return a + b;
+// mutação
+const usuario = { nome: 'Jorge '};
+usuario.nome = 'José';
+console.log(usuario);
+
+// escopo
+function teste(x) {
+  let y = 2;
+
+  if (x > 5) {
+    console.log(x, y);
   }
 }
 
-console.log(Matematica.soma(1, 2));
+teste(10);
+
+// console.log(y); erro de escopo
