@@ -1,24 +1,25 @@
-/*
-ERROR - não podemos reatribuir valor a uma const
+// map
+const arr = [1, 3, 4, 5, 8, 9];
 
-const a = 3;
-a = 5;
-*/
+const newArr = arr.map(function(item, index) {
+  return item + index;
+});
+console.log(newArr);
 
-// mutação
-const usuario = { nome: 'Jorge '};
-usuario.nome = 'José';
-console.log(usuario);
+// reduce
+const sum = arr.reduce(function(total, next) {
+  return total + next;
+});
+console.log(sum);
 
-// escopo
-function teste(x) {
-  let y = 2;
+// filter
+const filter = arr.filter(function(item) {
+  return item % 2 === 0;
+});
+console.log(filter);
 
-  if (x > 5) {
-    console.log(x, y);
-  }
-}
-
-teste(10);
-
-// console.log(y); erro de escopo
+// find
+const find = arr.find(function(item) {
+  return item === 4;
+});
+console.log(find);
