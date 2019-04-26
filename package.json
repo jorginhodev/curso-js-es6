@@ -4,7 +4,7 @@
   "description": "Arquivos do curso",
   "main": "index.js",
   "scripts": {
-    "dev": "babel ./main.js -o ./bundle.js -w"
+    "dev": "webpack --mode=development -w"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,12 @@
     "url": "https://github.com/jorginhodev/curso-js-es6/issues"
   },
   "homepage": "https://github.com/jorginhodev/curso-js-es6#readme",
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3"
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
   }
 }
